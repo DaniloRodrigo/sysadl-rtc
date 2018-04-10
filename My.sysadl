@@ -158,3 +158,9 @@ package DimensionUnits {
 				flow out SysADL.types.Boolean
 			}
 		}
+		package Connectors {
+			import Ports;
+			import ValueTypes;
+			connector def FahrenheitToCelsiusCN {
+			}
+		}
