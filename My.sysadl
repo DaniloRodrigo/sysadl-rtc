@@ -83,10 +83,13 @@ package DimensionUnits {
 			dimension = Temperature }
 		}
 		package ValueTypes {
+			import DimensionUnits;
+			import SysADL.types;
 			value type Temperature {
 				dimension = DimensionUnits.Temperature
 			}
 			datatype Commands {
+			attributes Heater : Command Cooler : Command
 			}
 			value type FahrenheitTemperature extends Temperature {
 				unit = DimensionUnits.Fahrenheit dimension = DimensionUnits.Temperature
@@ -94,8 +97,64 @@ package DimensionUnits {
 			value type CelsiusTemperature extends Temperature {
 				unit = DimensionUnits.Celsius dimension = DimensionUnits.Temperature
 			}
+		enum Command {
+				On, Off
+			}
 		}
 		package Components {
+		import ValueTypes;
+			import Ports;
+			boundary component def UserInterfaceCP {
+				ports desired : Ports.FTemperatureOPT {
+				}
+			}
+			boundary component def HeaterCP {
+				ports controller : Ports.CommandIPT {
+				}
+			}
+			boundary component def CoolerCP {
+				ports controller : Ports.CommandIPT {
+				}
+			}
+			boundary component def TemperatureSensorCP {
+				ports current : Ports.CTemperatureOPT {
+				}
+			}
+			boundary component def PresenceSensorCP {
+				ports detected : Ports.PresenceOPT {
+				}
+			}
+			component def ARCH1 {
+			}
+			component def PresenceCheckerCP {
+			}
+			component def SensorMonitorCP {
+			}
+			component def CommanderCP {
+			}
 		}
 		package Ports {
+		import ValueTypes;
+			import SysADL.types;
+			port def FTemperatureOPT {
+				flow out ValueTypes.FahrenheitTemperature
+			}
+			port def CTemperatureOPT {
+				flow out ValueTypes.CelsiusTemperature
+			}
+			port def CTemperatureIPT {
+				flow in ValueTypes.CelsiusTemperature
+			}
+			port def CommandIPT {
+				flow in ValueTypes.Command
+			}
+			port def CommandOPT {
+				flow out ValueTypes.Command
+			}
+			port def PresenceIPT {
+				flow in SysADL.types.Boolean
+			}
+			port def PresenceOPT {
+				flow out SysADL.types.Boolean
+			}
 		}
