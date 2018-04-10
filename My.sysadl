@@ -104,6 +104,7 @@ package DimensionUnits {
 		package Components {
 		import ValueTypes;
 			import Ports;
+			import SysADL.types;
 			boundary component def UserInterfaceCP {
 				ports desired : Ports.FTemperatureOPT {
 				}
@@ -125,12 +126,49 @@ package DimensionUnits {
 				}
 			}
 			component def ARCH1 {
+			configuration {
+				}
 			}
 			component def PresenceCheckerCP {
 			}
 			component def SensorMonitorCP {
 			}
 			component def CommanderCP {
+			}
+		component def RoomTemperatureControllerCP {
+				configuration {
+				}
+			}
+			activity def CalculateAverageTemperatureAC ( t1 :
+			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) : (
+			averageTemperature : ValueTypes.CelsiusTemperature ) {
+				body {
+				}
+			}
+			activity def CheckPresenceToSetTemperatureAC ( presence :
+			SysADL.types.Boolean, desiredTemperature : ValueTypes.CelsiusTemperature ) :
+			( targetTemperature : ValueTypes.CelsiusTemperature ) {
+				body {
+				}
+			}
+			activity def DecideCommandAC ( averageTemp : ValueTypes.CelsiusTemperature,
+			targetTemp : ValueTypes.CelsiusTemperature ) : ( cool : ValueTypes.Command,
+			heat : ValueTypes.Command ) {
+				body {
+				}
+			}
+			activity def FahrenheitToCelsiusAC ( f : ValueTypes.FahrenheitTemperature )
+			: ( c : ValueTypes.CelsiusTemperature ) {
+				body {
+				}
+			}
+			action def CalculateAverageTemperatureAN ( t1 :
+			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) :
+			ValueTypes.CelsiusTemperature {
+			}
+			constraint CalculateAverageTemperatureEQ ( t1 :
+			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) : (
+			averageTemperature : ValueTypes.CelsiusTemperature ) {
 			}
 		}
 		package Ports {
