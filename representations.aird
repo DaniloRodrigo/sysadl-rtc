@@ -32,6 +32,10 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
         <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Connectors']"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_uLDh4D3yEeifLKhVLs8R0w" name="Internal Block Diagram (Structural IBD)" repPath="#_uKEqcD3yEeifLKhVLs8R0w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
+        <target xmi:type="sysADL_Sintax:Configuration" href="My.sysadl#//@packages[name='Components']/@architectures[name='ARCH1']/@composite"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_EjDSMC3aEeisNLGLzHbaig">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Allocation']"/>
@@ -45,13 +49,17 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_EkljQC3aEeisNLGLzHbaig">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Sry5cDzLEeinK80LygyAtw" name="new Block Definition Diagram (Behavior BDD)" repPath="#_SrW0kDzLEeinK80LygyAtw">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']"/>
-        <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
-      </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_zLA90DzLEeinK80LygyAtw" name="new Block Definition Diagram (Behavior BDD)" repPath="#_zK96gDzLEeinK80LygyAtw">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']"/>
         <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Xp7aLT35EeifLKhVLs8R0w" name="Activity Diagram" repPath="#_Xpc5AD35EeifLKhVLs8R0w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']"/>
+        <target xmi:type="sysADL_Sintax:ActivityBody" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_6G3vfT35EeifLKhVLs8R0w" name="Parametric Diagram" repPath="#_6GriMD35EeifLKhVLs8R0w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']"/>
+        <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Ek0z0C3aEeisNLGLzHbaig">
@@ -2533,26 +2541,208 @@
           <children xmi:type="notation:Node" xmi:id="_VulvUDy7EeiLPamvkvtkwg" type="5006"/>
           <children xmi:type="notation:Node" xmi:id="_VulvUTy7EeiLPamvkvtkwg" type="7001">
             <children xmi:type="notation:Node" xmi:id="_Y1FmMDy7EeiLPamvkvtkwg" type="3009" element="_Y0Ij8Dy7EeiLPamvkvtkwg">
+              <children xmi:type="notation:Node" xmi:id="_N_IasD33EeifLKhVLs8R0w" type="3012" element="_N90zID33EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_N_JBwD33EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_N_JBwT33EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_N_MsID33EeifLKhVLs8R0w" type="3003" element="_N96SsD33EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_N_MsIT33EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N_MsIj33EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_N_IasT33EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N_Iasj33EeifLKhVLs8R0w" x="-12" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_PXwagD33EeifLKhVLs8R0w" type="3012" element="_PXdfkD33EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_PXxBkD33EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_PXxBkT33EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_PXxooD33EeifLKhVLs8R0w" type="3003" element="_PXdfkT33EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_PXxooT33EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PXxooj33EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_PXwagT33EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PXwagj33EeifLKhVLs8R0w" x="461" y="60" width="20" height="20"/>
+              </children>
               <children xmi:type="notation:Node" xmi:id="_Y1GNQDy7EeiLPamvkvtkwg" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_Y1GNQTy7EeiLPamvkvtkwg" type="7003">
                 <styles xmi:type="notation:SortingStyle" xmi:id="_Y1GNQjy7EeiLPamvkvtkwg"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_Y1GNQzy7EeiLPamvkvtkwg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_Y1FmMTy7EeiLPamvkvtkwg" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y1FmMjy7EeiLPamvkvtkwg" x="190" y="69"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y1FmMjy7EeiLPamvkvtkwg" x="44" y="42" width="471" height="99"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_66i6AD33EeifLKhVLs8R0w" type="3009" element="_63wEsD33EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_DleCwD34EeifLKhVLs8R0w" type="3012" element="_DlM9AD34EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_DleCwz34EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_DleCxD34EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_Dlep0D34EeifLKhVLs8R0w" type="3003" element="_DlNkED34EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_Dlep0T34EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dlep0j34EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_DleCwT34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DleCwj34EeifLKhVLs8R0w" x="-12" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_E3VTQD34EeifLKhVLs8R0w" type="3012" element="_E3E0kD34EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_E3V6UD34EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_E3V6UT34EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_E3WhYD34EeifLKhVLs8R0w" type="3003" element="_E3FboD34EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_E3WhYT34EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E3WhYj34EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_E3VTQT34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E3VTQj34EeifLKhVLs8R0w" x="461" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_66i6Az33EeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_66jhED33EeifLKhVLs8R0w" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_66jhET33EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_66jhEj33EeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_66i6AT33EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_66i6Aj33EeifLKhVLs8R0w" x="44" y="158" width="471" height="99"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mkkC4D34EeifLKhVLs8R0w" type="3009" element="_mkH-AD34EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_tE6xgD34EeifLKhVLs8R0w" type="3012" element="_tEtWID34EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_tE7YkD34EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tE7YkT34EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_tE7_oD34EeifLKhVLs8R0w" type="3003" element="_tEtWIT34EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_tE7_oT34EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tE7_oj34EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_tE6xgT34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tE6xgj34EeifLKhVLs8R0w" x="-12" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_uMNJsD34EeifLKhVLs8R0w" type="3012" element="_uMBjgD34EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_uMNJsz34EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_uMNJtD34EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_uMNwwD34EeifLKhVLs8R0w" type="3003" element="_uMBjgT34EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_uMNwwT34EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uMNwwj34EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_uMNJsT34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uMNJsj34EeifLKhVLs8R0w" x="460" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_mkkC4z34EeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_mkkC5D34EeifLKhVLs8R0w" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_mkkC5T34EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_mkkC5j34EeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_mkkC4T34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mkkC4j34EeifLKhVLs8R0w" x="44" y="274" width="470" height="99"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_7_fTYD34EeifLKhVLs8R0w" type="3009" element="_7_NmkD34EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_C-cpkD35EeifLKhVLs8R0w" type="3012" element="_C-OAED35EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_C-dQoD35EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_C-dQoT35EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_C-dQoj35EeifLKhVLs8R0w" type="3003" element="_C-OnID35EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_C-d3sD35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C-d3sT35EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_C-cpkT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C-cpkj35EeifLKhVLs8R0w" x="-12" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_DvOmQD35EeifLKhVLs8R0w" type="3012" element="_DvAj0D35EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_DvOmQz35EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_DvOmRD35EeifLKhVLs8R0w" x="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_DvPNUD35EeifLKhVLs8R0w" type="3003" element="_DvAj0T35EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_DvPNUT35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DvPNUj35EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_DvOmQT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DvOmQj35EeifLKhVLs8R0w" x="460" y="60" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_7_fTYz34EeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_7_fTZD34EeifLKhVLs8R0w" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_7_fTZT34EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_7_fTZj34EeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_7_fTYT34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7_fTYj34EeifLKhVLs8R0w" x="44" y="390" width="470" height="99"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_VulvUjy7EeiLPamvkvtkwg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_VulvUzy7EeiLPamvkvtkwg"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_VulIRTy7EeiLPamvkvtkwg" fontName="Ubuntu" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VulIRjy7EeiLPamvkvtkwg" width="693" height="523"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VulIRjy7EeiLPamvkvtkwg" y="12" width="693" height="567"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_VulIQzy7EeiLPamvkvtkwg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_nJYcoD33EeifLKhVLs8R0w" type="4001" element="_nHK2ID33EeifLKhVLs8R0w" source="_N_IasD33EeifLKhVLs8R0w" target="_PXwagD33EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_nJZqwD33EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJZqwT33EeifLKhVLs8R0w" x="-3" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nJaR0D33EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJaR0T33EeifLKhVLs8R0w" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nJaR0j33EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJaR0z33EeifLKhVLs8R0w" x="3" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_nJYcoT33EeifLKhVLs8R0w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_nJYcoj33EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nJYcoz33EeifLKhVLs8R0w" points="[0, 0, -585, 7]$[585, -7, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nJcHAD33EeifLKhVLs8R0w" id="(1.0,0.35)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nJcHAT33EeifLKhVLs8R0w" id="(0.0,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Hf_-oD34EeifLKhVLs8R0w" type="4001" element="_HfmWAD34EeifLKhVLs8R0w" source="_DleCwD34EeifLKhVLs8R0w" target="_E3VTQD34EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_HgAlsD34EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HgAlsT34EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HgAlsj34EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HgAlsz34EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HgAltD34EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HgAltT34EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Hf_-oT34EeifLKhVLs8R0w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Hf_-oj34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hf_-oz34EeifLKhVLs8R0w" points="[0, 0, -453, 0]$[453, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HgBMwD34EeifLKhVLs8R0w" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HgBMwT34EeifLKhVLs8R0w" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zzSuAD34EeifLKhVLs8R0w" type="4001" element="_zyy-wD34EeifLKhVLs8R0w" source="_tE6xgD34EeifLKhVLs8R0w" target="_uMNJsD34EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_zzSuBD34EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zzSuBT34EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zzSuBj34EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zzSuBz34EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zzSuCD34EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zzSuCT34EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zzSuAT34EeifLKhVLs8R0w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zzSuAj34EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zzSuAz34EeifLKhVLs8R0w" points="[0, 0, -452, 0]$[452, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zzTVED34EeifLKhVLs8R0w" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zzTVET34EeifLKhVLs8R0w" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_LiMMQD35EeifLKhVLs8R0w" type="4001" element="_Lhr18D35EeifLKhVLs8R0w" source="_C-cpkD35EeifLKhVLs8R0w" target="_DvOmQD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_LiMzUD35EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LiMzUT35EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LiMzUj35EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LiMzUz35EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LiMzVD35EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LiMzVT35EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_LiMMQT35EeifLKhVLs8R0w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_LiMMQj35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LiMMQz35EeifLKhVLs8R0w" points="[0, 0, -452, 0]$[452, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LiMzVj35EeifLKhVLs8R0w" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LiMzVz35EeifLKhVLs8R0w" id="(0.0,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_VukhNDy7EeiLPamvkvtkwg" name="bdd [Structure] Connectors">
       <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Connectors']"/>
       <semanticElements xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Connectors']"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_VukhNTy7EeiLPamvkvtkwg" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@style"/>
       </ownedStyle>
@@ -2560,47 +2750,176 @@
       <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Y0Ij8Dy7EeiLPamvkvtkwg" name="&lt;&lt;connector>>&#xA;FahrenheitToCelsiusCN">
         <target xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']"/>
         <semanticElements xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_N90zID33EeifLKhVLs8R0w" name="source:~FTemperatureOPT" outgoingEdges="_nHK2ID33EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@ports.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_N96SsD33EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_PXdfkD33EeifLKhVLs8R0w" name="destination:~CTemperatureIPT" incomingEdges="_nHK2ID33EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@ports.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_PXdfkT33EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Y0NccDy7EeiLPamvkvtkwg" iconPath="/SysADL.viewpoints/icons/Connector.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']"/>
       </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_63wEsD33EeifLKhVLs8R0w" name="&lt;&lt;connector>>&#xA;CTemperatureCN">
+        <target xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_DlM9AD34EeifLKhVLs8R0w" name="source:~CTemperatureOPT" outgoingEdges="_HfmWAD34EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@ports.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_DlNkED34EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_E3E0kD34EeifLKhVLs8R0w" name="destination:~CTemperatureIPT" incomingEdges="_HfmWAD34EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@ports.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_E3FboD34EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_633ZcD33EeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Connector.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_mkH-AD34EeifLKhVLs8R0w" name="&lt;&lt;connector>>&#xA;DetectPresenceCN">
+        <target xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_tEtWID34EeifLKhVLs8R0w" name="source:~PresenceOPT" outgoingEdges="_zyy-wD34EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@ports.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_tEtWIT34EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_uMBjgD34EeifLKhVLs8R0w" name="destination:~PresenceOPT" incomingEdges="_zyy-wD34EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@ports.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_uMBjgT34EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_mkH-AT34EeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Connector.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_7_NmkD34EeifLKhVLs8R0w" name="&lt;&lt;connector>>&#xA;ControlCommandCN">
+        <target xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ConnectorDef" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_C-OAED35EeifLKhVLs8R0w" name="source:~CommandOPT" outgoingEdges="_Lhr18D35EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@ports.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@ports.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_C-OnID35EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_DvAj0D35EeifLKhVLs8R0w" name="destination:~CommandIPT" incomingEdges="_Lhr18D35EeifLKhVLs8R0w" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@ports.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:PortUse" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@ports.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_DvAj0T35EeifLKhVLs8R0w" showIcon="false" borderLineStyle="dash" width="2" height="2" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@borderedNodeMappings[name='BDD.Connector.PortRef']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_7_ONoD34EeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Connector.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ConnectorDef']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_nHK2ID33EeifLKhVLs8R0w" name="Temperature" sourceNode="_N90zID33EeifLKhVLs8R0w" targetNode="_PXdfkD33EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@flows.0"/>
+      <semanticElements xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='FahrenheitToCelsiusCN']/@flows.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_nHK2IT33EeifLKhVLs8R0w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_nHK2Ij33EeifLKhVLs8R0w" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HfmWAD34EeifLKhVLs8R0w" name="Temperature" sourceNode="_DlM9AD34EeifLKhVLs8R0w" targetNode="_E3E0kD34EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@flows.0"/>
+      <semanticElements xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='CTemperatureCN']/@flows.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HfmWAT34EeifLKhVLs8R0w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HfmWAj34EeifLKhVLs8R0w" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zyy-wD34EeifLKhVLs8R0w" name="Boolean" sourceNode="_tEtWID34EeifLKhVLs8R0w" targetNode="_uMBjgD34EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@flows.0"/>
+      <semanticElements xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='DetectPresenceCN']/@flows.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zyy-wT34EeifLKhVLs8R0w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zyy-wj34EeifLKhVLs8R0w" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Lhr18D35EeifLKhVLs8R0w" name="Command" sourceNode="_C-OAED35EeifLKhVLs8R0w" targetNode="_DvAj0D35EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@flows.0"/>
+      <semanticElements xmi:type="sysADL_Sintax:Flow" href="My.sysadl#//@packages[name='Connectors']/@architectures[name='ControlCommandCN']/@flows.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_LhsdAD35EeifLKhVLs8R0w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_LhsdAT35EeifLKhVLs8R0w" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Flow']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_VukhNjy7EeiLPamvkvtkwg"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer"/>
     <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Connectors']"/>
-  </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_SrwdMDzLEeinK80LygyAtw" name="new Block Definition Diagram (Behavior BDD)" uid="_SrW0kDzLEeinK80LygyAtw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_SrxEQDzLEeinK80LygyAtw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_SrxEQTzLEeinK80LygyAtw"/>
-    </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_SsKF0DzLEeinK80LygyAtw" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_SsKF0TzLEeinK80LygyAtw" type="Sirius" element="_SrwdMDzLEeinK80LygyAtw" measurementUnit="Pixel">
-        <children xmi:type="notation:Node" xmi:id="_SsLT8DzLEeinK80LygyAtw" type="2002" element="_SrxEQzzLEeinK80LygyAtw">
-          <children xmi:type="notation:Node" xmi:id="_SsNJIDzLEeinK80LygyAtw" type="5006"/>
-          <children xmi:type="notation:Node" xmi:id="_SsUd4DzLEeinK80LygyAtw" type="7001">
-            <styles xmi:type="notation:SortingStyle" xmi:id="_SsUd4TzLEeinK80LygyAtw"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_SsUd4jzLEeinK80LygyAtw"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_SsLT8TzLEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SsLT8jzLEeinK80LygyAtw" width="468" height="298"/>
-        </children>
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_SsKF0jzLEeinK80LygyAtw"/>
-      </data>
-    </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_SrxEQzzLEeinK80LygyAtw" name="bdd [Behavior] Components">
-      <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
-      <semanticElements xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_SrxERDzLEeinK80LygyAtw" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']"/>
-    </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_SrxERTzLEeinK80LygyAtw"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer"/>
-    <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram xmi:id="_zLAWwDzLEeinK80LygyAtw" name="new Block Definition Diagram (Behavior BDD)" uid="_zK96gDzLEeinK80LygyAtw">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zLAWwTzLEeinK80LygyAtw" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -2634,7 +2953,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_uqAbUjzMEeinK80LygyAtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_up_0QTzMEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_up_0QjzMEeinK80LygyAtw" x="35" y="39" width="235" height="93"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_up_0QjzMEeinK80LygyAtw" x="79" y="39" width="235" height="93"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_7J7fsDzMEeinK80LygyAtw" type="3009" element="_7Jn9sDzMEeinK80LygyAtw">
               <children xmi:type="notation:Node" xmi:id="_7J7fszzMEeinK80LygyAtw" type="5004"/>
@@ -2659,7 +2978,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_7J8GwjzMEeinK80LygyAtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_7J7fsTzMEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7J7fsjzMEeinK80LygyAtw" x="40" y="169"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7J7fsjzMEeinK80LygyAtw" x="79" y="160" width="226" height="93"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_L3w5gDzOEeinK80LygyAtw" type="3009" element="_L3XQ4DzOEeinK80LygyAtw">
               <children xmi:type="notation:Node" xmi:id="_L3xgkDzOEeinK80LygyAtw" type="5004"/>
@@ -2688,7 +3007,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_L3xgkzzOEeinK80LygyAtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_L3w5gTzOEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L3w5gjzOEeinK80LygyAtw" x="57" y="279"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L3w5gjzOEeinK80LygyAtw" x="79" y="281" width="192" height="106"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_wSZDgDzOEeinK80LygyAtw" type="3009" element="_wSGvoDzOEeinK80LygyAtw">
               <children xmi:type="notation:Node" xmi:id="_wSZqkDzOEeinK80LygyAtw" type="5004"/>
@@ -2726,7 +3045,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_FR90xjzPEeinK80LygyAtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_FR90wTzPEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR90wjzPEeinK80LygyAtw" x="365" y="39" width="290" height="67"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FR90wjzPEeinK80LygyAtw" x="376" y="39" width="329" height="93"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_M5hmkDzQEeinK80LygyAtw" type="3009" element="_M3wE8DzQEeinK80LygyAtw">
               <children xmi:type="notation:Node" xmi:id="_M5hmkzzQEeinK80LygyAtw" type="5004"/>
@@ -2747,7 +3066,58 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_M5hmljzQEeinK80LygyAtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_M5hmkTzQEeinK80LygyAtw" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M5hmkjzQEeinK80LygyAtw" x="750" y="39"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M5hmkjzQEeinK80LygyAtw" x="750" y="39" height="93"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Qe9P8D3zEeifLKhVLs8R0w" type="3009" element="_QeR6gD3zEeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_Qe9P8z3zEeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_Qe93AD3zEeifLKhVLs8R0w" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_YkSYUD3zEeifLKhVLs8R0w" type="3010" element="_YjhjUD3zEeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_YkSYUT3zEeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_YkSYUj3zEeifLKhVLs8R0w"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_ZnErAD3zEeifLKhVLs8R0w" type="3010" element="_Zm_LcD3zEeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_ZnErAT3zEeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ZnErAj3zEeifLKhVLs8R0w"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_afUhoD3zEeifLKhVLs8R0w" type="3010" element="_afNM4D3zEeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_afUhoT3zEeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_afUhoj3zEeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Qe93AT3zEeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Qe93Aj3zEeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Qe9P8T3zEeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qe9P8j3zEeifLKhVLs8R0w" x="355" y="182"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LWCY4D30EeifLKhVLs8R0w" type="3009" element="_LVg0cD30EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_LWC_8D30EeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_LWC_8T30EeifLKhVLs8R0w" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_OO7RkD30EeifLKhVLs8R0w" type="3010" element="_OOzVwD30EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_OO7RkT30EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_OO7Rkj30EeifLKhVLs8R0w"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_PDHHkD30EeifLKhVLs8R0w" type="3010" element="_PDBoAD30EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_PDHHkT30EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_PDHHkj30EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_LWC_8j30EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_LWC_8z30EeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_LWCY4T30EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LWCY4j30EeifLKhVLs8R0w" x="355" y="312"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XMZi4D30EeifLKhVLs8R0w" type="3009" element="_XMOjwD30EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_XMaJ8D30EeifLKhVLs8R0w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_XMaJ8T30EeifLKhVLs8R0w" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_YOQBcD30EeifLKhVLs8R0w" type="3010" element="_YOLI8D30EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_YOQBcT30EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_YOQBcj30EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_XMaJ8j30EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_XMaJ8z30EeifLKhVLs8R0w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_XMZi4T30EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XMZi4j30EeifLKhVLs8R0w" x="355" y="444"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_zLCL8jzLEeinK80LygyAtw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_zLCL8zzLEeinK80LygyAtw"/>
@@ -2756,6 +3126,22 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zLBk4jzLEeinK80LygyAtw" width="1072" height="583"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_zLA90zzLEeinK80LygyAtw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_lLru8D35EeifLKhVLs8R0w" type="4001" element="_lLhW4D35EeifLKhVLs8R0w" source="_up_0QDzMEeinK80LygyAtw" target="_FR90wDzPEeinK80LygyAtw">
+          <children xmi:type="notation:Node" xmi:id="_lLsWAD35EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLsWAT35EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lLsWAj35EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLsWAz35EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lLsWBD35EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLsWBT35EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lLru8T35EeifLKhVLs8R0w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lLru8j35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lLru8z35EeifLKhVLs8R0w" points="[0, 0, -344, 0]$[226, 0, -118, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lLuLMD35EeifLKhVLs8R0w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lLuLMT35EeifLKhVLs8R0w" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zLAWxDzLEeinK80LygyAtw" name="bdd [Behavior] Components">
@@ -2765,7 +3151,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_uogmgDzMEeinK80LygyAtw" name="&lt;&lt;activity>>&#xA;CalculateAverageTemperatureAC">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_uogmgDzMEeinK80LygyAtw" name="&lt;&lt;activity>>&#xA;CalculateAverageTemperatureAC" outgoingEdges="_lLhW4D35EeifLKhVLs8R0w">
         <target xmi:type="sysADL_Sintax:ActivityDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']"/>
         <semanticElements xmi:type="sysADL_Sintax:ActivityDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2937,7 +3323,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Activity']/@subNodeMappings[name='BDD.Activity.OutParams']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_FRALcDzPEeinK80LygyAtw" name="&lt;&lt;action>>&#xA;CalculateAverageTemperatureAN : CelsiusTemperature">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_FRALcDzPEeinK80LygyAtw" name="&lt;&lt;action>>&#xA;CalculateAverageTemperatureAN : CelsiusTemperature" incomingEdges="_lLhW4D35EeifLKhVLs8R0w">
         <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
         <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2999,10 +3385,491 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Constraint']/@subNodeMappings[name='BDD.Constraint.ParamOut']"/>
         </ownedElements>
       </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_QeR6gD3zEeifLKhVLs8R0w" name="&lt;&lt;action>>&#xA;CheckPresenceToSetTemperatureAN : CelsiusTemperature">
+        <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_QeR6gT3zEeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Action.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_YjhjUD3zEeifLKhVLs8R0w" name="in presence:Boolean">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.0"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_YjjYgD3zEeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Zm_LcD3zEeifLKhVLs8R0w" name="in desiredTemperature:CelsiusTemperature">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.1"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_Zm_ygD3zEeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_afNM4D3zEeifLKhVLs8R0w" name="in targetTemperature:CelsiusTemperature">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.2"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CheckPresenceToSetTemperatureAN']/@inParameters.2"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_afNM4T3zEeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_LVg0cD30EeifLKhVLs8R0w" name="&lt;&lt;action>>&#xA;DecideCommandAN : Commands">
+        <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_LVhbgD30EeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Action.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_OOzVwD30EeifLKhVLs8R0w" name="in averageTemp:CelsiusTemperature">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']/@inParameters.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']/@inParameters.0"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_OOz80D30EeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_PDBoAD30EeifLKhVLs8R0w" name="in targetTemp:CelsiusTemperature">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']/@inParameters.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='DecideCommandAN']/@inParameters.1"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_PDBoAT30EeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_XMOjwD30EeifLKhVLs8R0w" name="&lt;&lt;action>>&#xA;FahrenheitToCelsiusAN : CelsiusTemperature">
+        <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='FahrenheitToCelsiusAN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='FahrenheitToCelsiusAN']"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_XMPK0D30EeifLKhVLs8R0w" iconPath="/SysADL.viewpoints/icons/Action.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_YOLI8D30EeifLKhVLs8R0w" name="in f:FahrenheitTemperature">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='FahrenheitToCelsiusAN']/@inParameters.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='FahrenheitToCelsiusAN']/@inParameters.0"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_YOLI8T30EeifLKhVLs8R0w" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@containerMappings[name='BDD.Behavior.Self']/@subContainerMappings[name='BDD.Action']/@subNodeMappings[name='BDD.Action.InParams']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lLhW4D35EeifLKhVLs8R0w" sourceNode="_uogmgDzMEeinK80LygyAtw" targetNode="_FRALcDzPEeinK80LygyAtw">
+      <target xmi:type="sysADL_Sintax:ActivityDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lLh98D35EeifLKhVLs8R0w" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@edgeMappings[name='BDD.Activity.Composition']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lLh98T35EeifLKhVLs8R0w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer/@edgeMappings[name='BDD.Activity.Composition']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_zLAWxjzLEeinK80LygyAtw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']/@defaultLayer"/>
     <target xmi:type="sysADL_Sintax:Package" href="My.sysadl#//@packages[name='Components']"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_uK6X8D3yEeifLKhVLs8R0w" name="Internal Block Diagram (Structural IBD)" uid="_uKEqcD3yEeifLKhVLs8R0w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uK6X8T3yEeifLKhVLs8R0w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_uK6X8j3yEeifLKhVLs8R0w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uLZgID3yEeifLKhVLs8R0w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_uLZgIT3yEeifLKhVLs8R0w" type="Sirius" element="_uK6X8D3yEeifLKhVLs8R0w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_uLdxkD3yEeifLKhVLs8R0w" type="2002" element="_uK6X9D3yEeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_uLiDAD3yEeifLKhVLs8R0w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_uLiDAT3yEeifLKhVLs8R0w" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_uLiDAj3yEeifLKhVLs8R0w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_uLiDAz3yEeifLKhVLs8R0w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_uLdxkT3yEeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uLdxkj3yEeifLKhVLs8R0w"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_uLZgIj3yEeifLKhVLs8R0w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_uK6X9D3yEeifLKhVLs8R0w" name=" ibd [Component] ARCH1" width="60" height="40">
+      <target xmi:type="sysADL_Sintax:Configuration" href="My.sysadl#//@packages[name='Components']/@architectures[name='ARCH1']/@composite"/>
+      <semanticElements xmi:type="sysADL_Sintax:Configuration" href="My.sysadl#//@packages[name='Components']/@architectures[name='ARCH1']/@composite"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_uK6X9T3yEeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_uK6X9j3yEeifLKhVLs8R0w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer"/>
+    <target xmi:type="sysADL_Sintax:Configuration" href="My.sysadl#//@packages[name='Components']/@architectures[name='ARCH1']/@composite"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_Xp7aID35EeifLKhVLs8R0w" name="Activity Diagram" uid="_Xpc5AD35EeifLKhVLs8R0w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Xp7aIT35EeifLKhVLs8R0w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_Xp7aIj35EeifLKhVLs8R0w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_XqHAUD35EeifLKhVLs8R0w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_XqHAUT35EeifLKhVLs8R0w" type="Sirius" element="_Xp7aID35EeifLKhVLs8R0w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_XqHAUz35EeifLKhVLs8R0w" type="2002" element="_Xp7aJD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_XqHnYD35EeifLKhVLs8R0w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_XqHnYT35EeifLKhVLs8R0w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lLloUD35EeifLKhVLs8R0w" type="3008" element="_lJcTQD35EeifLKhVLs8R0w">
+              <children xmi:type="notation:Node" xmi:id="_lLloUz35EeifLKhVLs8R0w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lLmPYD35EeifLKhVLs8R0w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lLmPYT35EeifLKhVLs8R0w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lLmPYj35EeifLKhVLs8R0w"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lLm2cD35EeifLKhVLs8R0w" type="3012" element="_lJldMD35EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_lLm2cz35EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_lLm2dD35EeifLKhVLs8R0w" x="11" y="-5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_lLoElT35EeifLKhVLs8R0w" type="3003" element="_lJpHkD35EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lLoElj35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLoElz35EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lLm2cT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLm2cj35EeifLKhVLs8R0w" x="327" y="55" width="10" height="10"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lLndgD35EeifLKhVLs8R0w" type="3012" element="_lJpHkT35EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_lLndgz35EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_lLndhD35EeifLKhVLs8R0w" x="11" y="-5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_lLoroD35EeifLKhVLs8R0w" type="3003" element="_lJpHkj35EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lLoroT35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLoroj35EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lLndgT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLndgj35EeifLKhVLs8R0w" x="-2" y="31" width="10" height="10"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lLoEkD35EeifLKhVLs8R0w" type="3012" element="_lJpuoD35EeifLKhVLs8R0w">
+                <children xmi:type="notation:Node" xmi:id="_lLoEkz35EeifLKhVLs8R0w" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_lLoElD35EeifLKhVLs8R0w" x="11" y="-5"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_lLpSsD35EeifLKhVLs8R0w" type="3003" element="_lJpuoT35EeifLKhVLs8R0w">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lLpSsT35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLpSsj35EeifLKhVLs8R0w"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lLoEkT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLoEkj35EeifLKhVLs8R0w" x="-2" y="79" width="10" height="10"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lLloUT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lLloUj35EeifLKhVLs8R0w" x="127" y="71" height="106"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_XqHnYj35EeifLKhVLs8R0w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_XqHnYz35EeifLKhVLs8R0w"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XqHnZD35EeifLKhVLs8R0w" type="3012" element="_Xp7aJT35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_XqHnZz35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_XqHnaD35EeifLKhVLs8R0w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XqJckD35EeifLKhVLs8R0w" type="3003" element="_Xp7aJj35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_XqJckT35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqJckj35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XqHnZT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqHnZj35EeifLKhVLs8R0w" x="-108" y="96" width="116" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XqIOcD35EeifLKhVLs8R0w" type="3012" element="_Xp7aJz35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_XqIOcz35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_XqIOdD35EeifLKhVLs8R0w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XqJckz35EeifLKhVLs8R0w" type="3003" element="_Xp7aKD35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_XqJclD35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqJclT35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XqIOcT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqIOcj35EeifLKhVLs8R0w" x="-108" y="144" width="116" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XqI1gD35EeifLKhVLs8R0w" type="3012" element="_Xp7aKT35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_XqI1gz35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_XqI1hD35EeifLKhVLs8R0w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_XqJclj35EeifLKhVLs8R0w" type="3003" element="_Xp7aKj35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_XqJclz35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqJcmD35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XqI1gT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqI1gj35EeifLKhVLs8R0w" x="653" y="132" width="140" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_XqHAVD35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XqHAVT35EeifLKhVLs8R0w" x="144" y="36" width="663" height="267"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_XqHAUj35EeifLKhVLs8R0w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_wygBED35EeifLKhVLs8R0w" type="4001" element="_wvxdMD35EeifLKhVLs8R0w" source="_XqI1gD35EeifLKhVLs8R0w" target="_lLm2cD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_wygBFD35EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wygBFT35EeifLKhVLs8R0w" x="15" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wygoID35EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wygoIT35EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wygoIj35EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wygoIz35EeifLKhVLs8R0w" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wygBET35EeifLKhVLs8R0w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wygBEj35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wygBEz35EeifLKhVLs8R0w" points="[0, -12, 187, 0]$[-184, -12, 3, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wygoJD35EeifLKhVLs8R0w" id="(0.0,0.4)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wygoJT35EeifLKhVLs8R0w" id="(0.7,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_xvX5AD35EeifLKhVLs8R0w" type="4001" element="_xtGBED35EeifLKhVLs8R0w" source="_XqHnZD35EeifLKhVLs8R0w" target="_lLndgD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_xvYgED35EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvYgET35EeifLKhVLs8R0w" x="-38" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xvYgEj35EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvYgEz35EeifLKhVLs8R0w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xvYgFD35EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xvYgFT35EeifLKhVLs8R0w" x="-12" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_xvX5AT35EeifLKhVLs8R0w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_xvX5Aj35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xvX5Az35EeifLKhVLs8R0w" points="[32, -15, -122, 0]$[154, -15, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xvYgFj35EeifLKhVLs8R0w" id="(0.7241379310344828,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xvYgFz35EeifLKhVLs8R0w" id="(0.0,0.3)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_0PAkMD35EeifLKhVLs8R0w" type="4001" element="_0OnioD35EeifLKhVLs8R0w" source="_XqIOcD35EeifLKhVLs8R0w" target="_lLoEkD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_0PBLQD35EeifLKhVLs8R0w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0PBLQT35EeifLKhVLs8R0w" x="-10" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0PBLQj35EeifLKhVLs8R0w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0PBLQz35EeifLKhVLs8R0w" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0PBLRD35EeifLKhVLs8R0w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0PBLRT35EeifLKhVLs8R0w" x="-2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0PAkMT35EeifLKhVLs8R0w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0PAkMj35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0PAkMz35EeifLKhVLs8R0w" points="[0, 0, -122, 0]$[122, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0PBLRj35EeifLKhVLs8R0w" id="(1.0,0.4)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0PBLRz35EeifLKhVLs8R0w" id="(0.0,0.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Xp7aJD35EeifLKhVLs8R0w" name="act [Behavior] CalculateAverageTemperatureAC">
+      <target xmi:type="sysADL_Sintax:ActivityBody" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody"/>
+      <semanticElements xmi:type="sysADL_Sintax:ActivityBody" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Xp7aJT35EeifLKhVLs8R0w" name="t1 : CelsiusTemperature" outgoingEdges="_xtGBED35EeifLKhVLs8R0w" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@inParameters.0"/>
+        <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@inParameters.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_Xp7aJj35EeifLKhVLs8R0w" showIcon="false" labelPosition="node" color="140,140,232">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.In']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.In']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Xp7aJz35EeifLKhVLs8R0w" name="t2 : CelsiusTemperature" outgoingEdges="_0OnioD35EeifLKhVLs8R0w" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@inParameters.1"/>
+        <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@inParameters.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_Xp7aKD35EeifLKhVLs8R0w" showIcon="false" labelPosition="node" color="140,140,232">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.In']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.In']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_Xp7aKT35EeifLKhVLs8R0w" name="averageTemperature : CelsiusTemperature" outgoingEdges="_wvxdMD35EeifLKhVLs8R0w" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@outParameters.0"/>
+        <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@outParameters.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_Xp7aKj35EeifLKhVLs8R0w" showIcon="false" labelPosition="node" color="113,171,203">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.Out']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@borderedNodeMappings[name='ADNew.Pins.Out']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Xp7aKz35EeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lJcTQD35EeifLKhVLs8R0w" name="&lt;&lt;action>>&#xA;CalculateAverageTemperatureAN : CalculateAverageTemperatureAN">
+        <target xmi:type="sysADL_Sintax:ActionUse" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ActionUse" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_lJldMD35EeifLKhVLs8R0w" name=":CelsiusTemperature" incomingEdges="_wvxdMD35EeifLKhVLs8R0w" width="1" height="1">
+          <target xmi:type="sysADL_Sintax:ActionUse" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']"/>
+          <semanticElements xmi:type="sysADL_Sintax:ActionUse" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_lJpHkD35EeifLKhVLs8R0w" showIcon="false" color="113,171,203">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Output']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Output']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_lJpHkT35EeifLKhVLs8R0w" name="t1" incomingEdges="_xtGBED35EeifLKhVLs8R0w" width="1" height="1">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']/@pinIn.0"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']/@pinIn.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_lJpHkj35EeifLKhVLs8R0w" showIcon="false" color="140,140,232">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Input']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Input']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_lJpuoD35EeifLKhVLs8R0w" name="t2" incomingEdges="_0OnioD35EeifLKhVLs8R0w" width="1" height="1">
+          <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']/@pinIn.1"/>
+          <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@actions[name='CalculateAverageTemperatureAN']/@pinIn.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_lJpuoT35EeifLKhVLs8R0w" showIcon="false" color="140,140,232">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Input']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Input']"/>
+        </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lJk2ID35EeifLKhVLs8R0w" showIcon="false" iconPath="/SysADL.viewpoints/icons/Action.gif" borderSize="1" borderSizeComputationExpression="1" backgroundColor="247,220,159" foregroundColor="247,220,159">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_wvxdMD35EeifLKhVLs8R0w" sourceNode="_Xp7aKT35EeifLKhVLs8R0w" targetNode="_lJldMD35EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.0"/>
+      <semanticElements xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_wvxdMT35EeifLKhVLs8R0w" lineStyle="dash" targetArrow="NoDecoration" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.Out']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_wvxdMj35EeifLKhVLs8R0w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.Out']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_xtGBED35EeifLKhVLs8R0w" sourceNode="_Xp7aJT35EeifLKhVLs8R0w" targetNode="_lJpHkT35EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.1"/>
+      <semanticElements xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_xtGBET35EeifLKhVLs8R0w" lineStyle="dash" targetArrow="NoDecoration" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.In']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_xtGBEj35EeifLKhVLs8R0w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.In']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_0OnioD35EeifLKhVLs8R0w" sourceNode="_Xp7aJz35EeifLKhVLs8R0w" targetNode="_lJpuoD35EeifLKhVLs8R0w">
+      <target xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.2"/>
+      <semanticElements xmi:type="sysADL_Sintax:ActivityDelegation" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody/@flows.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_0OnioT35EeifLKhVLs8R0w" lineStyle="dash" targetArrow="NoDecoration" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.In']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_0Onioj35EeifLKhVLs8R0w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.In']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_Xp7aLD35EeifLKhVLs8R0w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer"/>
+    <target xmi:type="sysADL_Sintax:ActivityBody" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAC']/@acbody"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_6G3vcD35EeifLKhVLs8R0w" name="Parametric Diagram" uid="_6GriMD35EeifLKhVLs8R0w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_6G3vcT35EeifLKhVLs8R0w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_6G3vcj35EeifLKhVLs8R0w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_6HEjwD35EeifLKhVLs8R0w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_6HEjwT35EeifLKhVLs8R0w" type="Sirius" element="_6G3vcD35EeifLKhVLs8R0w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_6HEjwz35EeifLKhVLs8R0w" type="2002" element="_6G3vdD35EeifLKhVLs8R0w">
+          <children xmi:type="notation:Node" xmi:id="_6HFx4D35EeifLKhVLs8R0w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_6HFx4T35EeifLKhVLs8R0w" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_6HFx4j35EeifLKhVLs8R0w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_6HFx4z35EeifLKhVLs8R0w"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6HGY8D35EeifLKhVLs8R0w" type="3012" element="_6G3vdT35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_6HHAAD35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_6HHAAT35EeifLKhVLs8R0w" x="-15" y="-169"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6HKqYj35EeifLKhVLs8R0w" type="3003" element="_6G3vdj35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6HKqYz35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HKqZD35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6HGY8T35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HGY8j35EeifLKhVLs8R0w" x="-12" y="144" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6HIOID35EeifLKhVLs8R0w" type="3012" element="_6G3vdz35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_6HI1MD35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_6HI1MT35EeifLKhVLs8R0w" x="21"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6HLRcD35EeifLKhVLs8R0w" type="3003" element="_6G3veD35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6HLRcT35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HLRcj35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6HIOIT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HIOIj35EeifLKhVLs8R0w" x="-12" y="264" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6HKDUD35EeifLKhVLs8R0w" type="3012" element="_6G3veT35EeifLKhVLs8R0w">
+            <children xmi:type="notation:Node" xmi:id="_6HKqYD35EeifLKhVLs8R0w" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_6HKqYT35EeifLKhVLs8R0w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_6HLRcz35EeifLKhVLs8R0w" type="3003" element="_6G3vej35EeifLKhVLs8R0w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_6HLRdD35EeifLKhVLs8R0w" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HLRdT35EeifLKhVLs8R0w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6HKDUT35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HKDUj35EeifLKhVLs8R0w" x="590" y="168" width="20" height="20"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_6HEjxD35EeifLKhVLs8R0w" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6HEjxT35EeifLKhVLs8R0w" x="144" y="60"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_6HEjwj35EeifLKhVLs8R0w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_6G3vdD35EeifLKhVLs8R0w" name="param [Action] CalculateAverageTemperatureAN" width="60" height="40">
+      <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
+      <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_6G3vdT35EeifLKhVLs8R0w" name="t1" width="2" height="2">
+        <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']/@inParameters.0"/>
+        <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']/@inParameters.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_6G3vdj35EeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" color="140,140,232">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamIn']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamIn']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_6G3vdz35EeifLKhVLs8R0w" name="t2" width="2" height="2">
+        <target xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']/@inParameters.1"/>
+        <semanticElements xmi:type="sysADL_Sintax:Pin" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']/@inParameters.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_6G3veD35EeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" color="140,140,232">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamIn']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamIn']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_6G3veT35EeifLKhVLs8R0w" name=":CelsiusTemperature" width="2" height="2">
+        <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
+        <semanticElements xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_6G3vej35EeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" labelPosition="node" color="113,171,203">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamOut.Action']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@borderedNodeMappings[name='Parametric.ParamOut.Action']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6G3vez35EeifLKhVLs8R0w" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer/@containerMappings[name='Parametric.Activity.Self']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_6G3vfD35EeifLKhVLs8R0w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/SysADL.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='Parametric']/@defaultLayer"/>
+    <target xmi:type="sysADL_Sintax:ActionDef" href="My.sysadl#//@packages[name='Components']/@architectures[name='CalculateAverageTemperatureAN']"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

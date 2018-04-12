@@ -143,6 +143,13 @@ package DimensionUnits {
 			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) : (
 			averageTemperature : ValueTypes.CelsiusTemperature ) {
 				body {
+				actions : CalculateAverageTemperatureAN : CalculateAverageTemperatureAN {
+						using pins t1 : ValueTypes.CelsiusTemperature t2 :
+						ValueTypes.CelsiusTemperature
+					}
+					delegate averageTemperature to CalculateAverageTemperatureAN delegate t1
+					to CalculateAverageTemperatureAN.t1 delegate t2 to
+					CalculateAverageTemperatureAN.t2
 				}
 			}
 			activity def CheckPresenceToSetTemperatureAC ( presence :
@@ -169,6 +176,16 @@ package DimensionUnits {
 			constraint CalculateAverageTemperatureEQ ( t1 :
 			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) : (
 			averageTemperature : ValueTypes.CelsiusTemperature ) {
+			}
+		action def CheckPresenceToSetTemperatureAN ( presence : SysADL.types.Boolean,
+			desiredTemperature : ValueTypes.CelsiusTemperature, targetTemperature :
+			ValueTypes.CelsiusTemperature ) : ValueTypes.CelsiusTemperature {
+			}
+			action def DecideCommandAN ( averageTemp : ValueTypes.CelsiusTemperature,
+			targetTemp : ValueTypes.CelsiusTemperature ) : ValueTypes.Commands {
+			}
+			action def FahrenheitToCelsiusAN ( f : ValueTypes.FahrenheitTemperature ) :
+			ValueTypes.CelsiusTemperature {
 			}
 		}
 		package Ports {
@@ -200,5 +217,31 @@ package DimensionUnits {
 			import Ports;
 			import ValueTypes;
 			connector def FahrenheitToCelsiusCN {
+			participants ~ source : Ports.FTemperatureOPT {
+				}
+				~ destination : Ports.CTemperatureIPT {
+				}
+				flows ValueTypes.Temperature from source to destination
+			}
+			connector def CTemperatureCN {
+				participants ~ source : Ports.CTemperatureOPT {
+				}
+				~ destination : Ports.CTemperatureIPT {
+				}
+				flows ValueTypes.Temperature from source to destination
+			}
+			connector def DetectPresenceCN {
+				participants ~ source : Ports.PresenceOPT {
+				}
+				~ destination : Ports.PresenceOPT {
+				}
+				flows SysADL.types.Boolean from source to destination
+			}
+			connector def ControlCommandCN {
+				participants ~ source : Ports.CommandOPT {
+				}
+				~ destination : Ports.CommandIPT {
+				}
+				flows ValueTypes.Command from source to destination
 			}
 		}
