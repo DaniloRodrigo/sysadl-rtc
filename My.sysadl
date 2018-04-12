@@ -156,12 +156,26 @@ package DimensionUnits {
 			SysADL.types.Boolean, desiredTemperature : ValueTypes.CelsiusTemperature ) :
 			( targetTemperature : ValueTypes.CelsiusTemperature ) {
 				body {
+				actions : CheckPresenceToSetTemperatureAN : CheckPresenceToSetTemperatureAN
+					{
+						using pins desiredTemperature : ValueTypes.CelsiusTemperature presence :
+						SysADL.types.Boolean
+					}
+					delegate presence to CheckPresenceToSetTemperatureAN.presence delegate
+					desiredTemperature to CheckPresenceToSetTemperatureAN.desiredTemperature
+					delegate targetTemperature to CheckPresenceToSetTemperatureAN
 				}
 			}
 			activity def DecideCommandAC ( averageTemp : ValueTypes.CelsiusTemperature,
 			targetTemp : ValueTypes.CelsiusTemperature ) : ( cool : ValueTypes.Command,
 			heat : ValueTypes.Command ) {
 				body {
+				actions : DecideCommandAN : DecideCommandAN {
+						using pins targetTemp : ValueTypes.CelsiusTemperature averageTemp :
+						ValueTypes.CelsiusTemperature
+					}
+					delegate averageTemp to DecideCommandAN.averageTemp delegate targetTemp to
+					DecideCommandAN.targetTemp
 				}
 			}
 			activity def FahrenheitToCelsiusAC ( f : ValueTypes.FahrenheitTemperature )
@@ -172,20 +186,35 @@ package DimensionUnits {
 			action def CalculateAverageTemperatureAN ( t1 :
 			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) :
 			ValueTypes.CelsiusTemperature {
+			post-condition CalculateAverageTemperatureEQ ( ) delegate t1 to
+				CalculateAverageTemperatureEQ.t1 delegate t2 to
+				CalculateAverageTemperatureEQ.t2 delegate CalculateAverageTemperatureAN to
+				CalculateAverageTemperatureEQ.averageTemperature
 			}
 			constraint CalculateAverageTemperatureEQ ( t1 :
 			ValueTypes.CelsiusTemperature, t2 : ValueTypes.CelsiusTemperature ) : (
 			averageTemperature : ValueTypes.CelsiusTemperature ) {
+				equation = averageTemperature == (t1+t2)/2
 			}
 		action def CheckPresenceToSetTemperatureAN ( presence : SysADL.types.Boolean,
-			desiredTemperature : ValueTypes.CelsiusTemperature, targetTemperature :
-			ValueTypes.CelsiusTemperature ) : ValueTypes.CelsiusTemperature {
+			desiredTemperature : ValueTypes.CelsiusTemperature ) :
+			ValueTypes.CelsiusTemperature {
+			post-condition CheckPresenceToSetTemperatureEQ ( )
 			}
 			action def DecideCommandAN ( averageTemp : ValueTypes.CelsiusTemperature,
 			targetTemp : ValueTypes.CelsiusTemperature ) : ValueTypes.Commands {
 			}
 			action def FahrenheitToCelsiusAN ( f : ValueTypes.FahrenheitTemperature ) :
 			ValueTypes.CelsiusTemperature {
+			}
+		constraint CheckPresenceToSetTemperatureEQ ( presence : SysADL.types.Boolean,
+			desiredTemperature : ValueTypes.CelsiusTemperature ) : ( targetTemperature :
+			ValueTypes.CelsiusTemperature ) {
+				 equation = presence == true ? targetTemperature == desiredTemperature : targetTemperature == 22
+			}
+		constraint DecideCommandEQ ( averageTemp : ValueTypes.CelsiusTemperature,
+			targetTemp : ValueTypes.CelsiusTemperature ) : ( ^out : ValueTypes.Commands
+			) {
 			}
 		}
 		package Ports {
