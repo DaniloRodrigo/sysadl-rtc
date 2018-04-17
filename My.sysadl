@@ -174,13 +174,25 @@ package DimensionUnits {
 						using pins targetTemp : ValueTypes.CelsiusTemperature averageTemp :
 						ValueTypes.CelsiusTemperature
 					}
-					delegate averageTemp to DecideCommandAN.averageTemp delegate targetTemp to
-					DecideCommandAN.targetTemp
+					CommandHeaterAN : CommandHeaterAN {
+						using pins cmds : ValueTypes.Commands
+					}
+					CommandCoolerAN : CommandCoolerAN {
+						using pins cmds : ValueTypes.Commands
+					}
+					delegate averageTemp to DecideCommandAN.averageTemp 
+				delegate  cool to CommandCoolerAN delegate heat to CommandHeaterAN delegate
+					targetTemp to DecideCommandAN.targetTemp flow from DecideCommandAN to
+					CommandCoolerAN.cmds flow from DecideCommandAN to CommandHeaterAN.cmds
 				}
 			}
 			activity def FahrenheitToCelsiusAC ( f : ValueTypes.FahrenheitTemperature )
 			: ( c : ValueTypes.CelsiusTemperature ) {
 				body {
+				actions : FahrenheitToCelsiusAN : FahrenheitToCelsiusAN {
+						using pins f : ValueTypes.FahrenheitTemperature
+					}
+					delegate f to FahrenheitToCelsiusAN.f delegate c to FahrenheitToCelsiusAN
 				}
 			}
 			action def CalculateAverageTemperatureAN ( t1 :
@@ -203,9 +215,16 @@ package DimensionUnits {
 			}
 			action def DecideCommandAN ( averageTemp : ValueTypes.CelsiusTemperature,
 			targetTemp : ValueTypes.CelsiusTemperature ) : ValueTypes.Commands {
+			post-condition DecideCommandEQ ( )
+			delegate DecideCommandAN to DecideCommandEQ.cmds delegate averageTemp to
+				DecideCommandEQ.averageTemp delegate targetTemp to
+				DecideCommandEQ.targetTemp
 			}
 			action def FahrenheitToCelsiusAN ( f : ValueTypes.FahrenheitTemperature ) :
 			ValueTypes.CelsiusTemperature {
+			post-condition FahrenheitToCelsiusEQ ( ) delegate f to
+				FahrenheitToCelsiusEQ.f delegate FahrenheitToCelsiusAN to
+				FahrenheitToCelsiusEQ.c
 			}
 		constraint CheckPresenceToSetTemperatureEQ ( presence : SysADL.types.Boolean,
 			desiredTemperature : ValueTypes.CelsiusTemperature ) : ( targetTemperature :
@@ -213,8 +232,36 @@ package DimensionUnits {
 				 equation = presence == true ? targetTemperature == desiredTemperature : targetTemperature == 22
 			}
 		constraint DecideCommandEQ ( averageTemp : ValueTypes.CelsiusTemperature,
-			targetTemp : ValueTypes.CelsiusTemperature ) : ( ^out : ValueTypes.Commands
+			targetTemp : ValueTypes.CelsiusTemperature ) : ( cmds : ValueTypes.Commands
 			) {
+				equation = 
+					averageTemp < targetTemp ? 
+						('cmds.Heater' == 'ValueTypes.Command::On' && 'cmds.Cooler' == 'ValueTypes.Command::Off') : 
+					averageTemp > targetTemp ? 
+						('cmds.Heater' == 'ValueTypes.Command::Off' && 'cmds.Cooler' == 'ValueTypes.Command::On') : 
+						('cmds.Heater' == 'ValueTypes.Command::Off' && 'cmds.Cooler' == 'ValueTypes.Command::Off') 
+			}
+		action def CommandHeaterAN ( cmds : ValueTypes.Commands ) : ValueTypes.Command
+			{
+			post-condition CommandHeaterEQ ( ) delegate CommandHeaterAN to
+				CommandHeaterEQ.c delegate cmds to CommandHeaterEQ.cmds
+			}
+			action def CommandCoolerAN ( cmds : ValueTypes.Commands ) :
+			ValueTypes.Command {
+			post-condition CommandCoolerEQ ( ) delegate cmds to CommandCoolerEQ.cmds
+				delegate CommandCoolerAN to CommandCoolerEQ.c
+			}
+		constraint CommandHeaterEQ ( cmds : ValueTypes.Commands ) : ( c :
+			ValueTypes.Command ) {
+				equation = 'cmds.Heater' == 'ValueTypes.Command::On' ? 'c == ValueTypes.Command::On' : 'c == ValueTypes.Command::Off'
+			}
+		constraint CommandCoolerEQ ( cmds : ValueTypes.Commands ) : ( c :
+			ValueTypes.Command ) {
+				equation = 'cmds.Cooler' == 'ValueTypes.Command::On' ? 'c == ValueTypes.Command::On' : 'c == ValueTypes.Command::Off'
+			}
+		constraint FahrenheitToCelsiusEQ ( f : ValueTypes.FahrenheitTemperature ) : (
+			c : ValueTypes.CelsiusTemperature ) {
+				equation = c == 5*(f-32)/9
 			}
 		}
 		package Ports {
